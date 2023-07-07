@@ -11,4 +11,3 @@ believes_in(simon, holistic_approach_to_healthcare).
 emphasizes_importance_of(simon, medical_treatments).
 emphasizes_importance_of(simon, lifestyle_modifications).
 educates_and_supports(simon,patients).
-patient_of(X, simon) :- doctor(simon), trusts(X, simon).
