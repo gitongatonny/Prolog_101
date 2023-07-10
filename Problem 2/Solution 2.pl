@@ -11,3 +11,15 @@ female(helen).
 female(sophie).
 female(lily).
 female(jess).
+
+%Parents
+parent(jack,jess).
+parent(jack,lily).
+parent(helen,jess).
+parent(helen,lily).
+parent(oliver,james).
+parent(sophie,james).
+parent(jess,simon).
+parent(ali,simon).
+parent(lily,harry).
+parent(james,harry).
