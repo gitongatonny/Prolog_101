@@ -31,3 +31,7 @@ mother_of(X,Y):-female(X),parent(X,Y).
 %GrandParents_Rules
 grand_father(X,Y):-male(X),parent(X,Z),parent(Z,Y).
 grand_mother(X,Y):-female(X),parent(X,Z),parent(Z,Y).
+
+%Siblings_Rules
+sister(X,Y):-parent(Z,X),parent(Z,Y),female(X), X\==Y.
+brother(X,Y):-parent(Z,X),parent(Z,Y),male(X),X\==Y.
