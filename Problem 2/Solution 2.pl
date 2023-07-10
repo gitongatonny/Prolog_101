@@ -27,3 +27,7 @@ parent(james,harry).
 %Parents_Rules
 father_of(X,Y):-male(X),parent(X,Y).
 mother_of(X,Y):-female(X),parent(X,Y).
+
+%GrandParents_Rules
+grand_father(X,Y):-male(X),parent(X,Z),parent(Z,Y).
+grand_mother(X,Y):-female(X),parent(X,Z),parent(Z,Y).
