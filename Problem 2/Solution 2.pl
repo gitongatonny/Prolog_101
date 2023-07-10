@@ -39,3 +39,8 @@ brother(X,Y):-parent(Z,X),parent(Z,Y),male(X),X\==Y.
 %Spouses_Rules
 husband(X,Y):-male(X),parent(X,Z),parent(Y,Z),female(Y).
 wife(X,Y) :- female(X),parent(X,Z),parent(Y,Z),male(Y).
+
+%OtherRelatives_Rules
+uncle(X,Z) :- male(X), brother(X,Y), parent(Y,Z).
+aunt(X,Z) :- female(X), sister(X,Y), parent(Y,Z).
+cousin(X, Y) :- parent(P1, X), parent(P2, Y), sibling(P1, P2).
