@@ -23,3 +23,7 @@ parent(jess,simon).
 parent(ali,simon).
 parent(lily,harry).
 parent(james,harry).
+
+%Parents_Rules
+father_of(X,Y):-male(X),parent(X,Y).
+mother_of(X,Y):-female(X),parent(X,Y).
