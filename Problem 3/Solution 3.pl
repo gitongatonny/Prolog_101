@@ -37,3 +37,6 @@ grandmother(X, Y) :- female(X), grandparent(X, Y).
 %AuntsandUnclesRules
 aunt(X,Y) :- female(X), parent(Z,Y), sister(X, Z).
 uncle(X,Y) :- male(X), parent(Z,Y), brother(X, Z).
+
+%CousinsRules
+cousin(X, Y) :- parent(P1, X), parent(P2, Y), sibling(P1, P2).
