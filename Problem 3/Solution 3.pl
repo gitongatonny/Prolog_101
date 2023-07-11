@@ -19,3 +19,7 @@ parent(peter, david).
 parent(peter, jane).
 parent(lisa, mark).
 parent(lisa, emily).
+
+%ParentsRules
+father(X, Y) :- male(X), parent(X, Y).
+mother(X, Y) :- female(X), parent(X, Y).
