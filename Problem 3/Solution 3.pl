@@ -33,3 +33,7 @@ sister(X, Y) :- female(X), sibling(X, Y).
 grandparent(X, Y) :- parent(X, Z), parent(Z, Y).
 grandfather(X, Y) :- male(X), grandparent(X, Y).
 grandmother(X, Y) :- female(X), grandparent(X, Y).
+
+%AuntsandUnclesRules
+aunt(X,Y) :- female(X), parent(Z,Y), sister(X, Z).
+uncle(X,Y) :- male(X), parent(Z,Y), brother(X, Z).
