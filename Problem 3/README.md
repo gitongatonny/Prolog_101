@@ -8,4 +8,3 @@ Create `facts` and `rules` to represent a family:
 - aunts and uncles.
 - cousins.
 - nephews and nieces.
-
