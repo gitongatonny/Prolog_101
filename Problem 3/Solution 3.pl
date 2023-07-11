@@ -40,3 +40,7 @@ uncle(X,Y) :- male(X), parent(Z,Y), brother(X, Z).
 
 %CousinsRules
 cousin(X, Y) :- parent(P1, X), parent(P2, Y), sibling(P1, P2).
+
+%NephewsandNiecesRules
+nephew(X,Y) :- uncle(Y,X) ; aunt(Y,X) ,male(X).
+niece(X,Y) :- uncle(Y,X) ; aunt(Y,X) ,female(X).
